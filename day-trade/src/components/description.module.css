@@ -1,0 +1,20 @@
+.main_description{
+    position: relative;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: none;
+}
+.description_text{
+    width: 435px;
+}
+.cursor{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}

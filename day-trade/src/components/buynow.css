@@ -1,0 +1,21 @@
+.material-symbols-outlined{
+    color: white;
+}
+.card{
+    color: white;
+}
+.card_payment button{
+    font-weight: 500;
+    font-size: 150%;
+    width: 105px;
+    height: 85px;
+    color: white;
+    background: linear-gradient(217deg, rgba(105, 255, 113, 0.8), rgb(16, 49, 16) 70.71%) ;
+    border-style: none;
+    border-radius: 5px;
+    transition: ease-in 0.7s 0.0001s;
+}
+.card_payment button:hover{
+    box-shadow: 0 0 100px #47f75f;
+    text-shadow: 0 0 100px #47f75f;
+}
