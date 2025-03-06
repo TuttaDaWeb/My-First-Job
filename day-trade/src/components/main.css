@@ -1,0 +1,46 @@
+.background{
+    margin: 0;
+}
+
+.background img{
+    position: relative;
+    text-align: center;
+    width: 98.86vw;
+    height: 100vh;
+    transition: linear 0.4s 0.1s;
+}
+.background img:hover{
+    filter: blur(6px);
+}
+.sobre_position{
+    width: 500px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    bottom: 70vh;
+    left: 56vw;
+}
+.sobre_position h2{
+    width: fit-content;
+    font-size: 90px;
+    background-color: transparent;
+}
+.sobre_position p{
+    background-color: transparent;
+}
+.out_position{
+    width: 500px;
+    color: transparent;
+    background-color: transparent;
+    position: relative;
+    bottom: 70vh;
+    left: 56vw;
+}
+.out_position h2{
+    width: fit-content;
+    font-size: 90px;
+    background-color: transparent;
+}
+.out_position p{
+    background-color: transparent;
+}
