@@ -18,3 +18,19 @@
     pointer-events: none;
     mix-blend-mode: difference;
 }
+
+@media(max-width: 822px){
+    .main_description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: none;
+    }
+    .main_description img{
+        width: min(630px, 90%);
+    }
+    .description_text{
+        width: min(435px, 90%);
+    }
+}

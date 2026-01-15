@@ -1,21 +1,22 @@
-import classes from './main.module.css';
-import background from '../assets/back-image.png'
-import { useState } from 'react';
+import Image from '../assets/image-main.png'
+import './main.css'
 
 function Main(){
 
-    const [isEntered, setEntered] = useState(false)
+    const desc = "E-book sobre Day Trade, aqui você saberá de tudo sobre essa profissão que mudará a sua vida para sempre, sem enrolação."
 
     return(
         <>
-        <main className={classes.background}>
-            <img src={background} 
-                onMouseEnter={() => setEntered(true)}
-                onMouseLeave={()=> setEntered(false)}/>
-            <header className={isEntered ? `${classes.sobre_position}` : `${classes.out_position}` }>
-                <h2>Day Trade Book</h2>
-                <p>E-book sobre Day Trade, aqui você saberá de tudo sobre essa profissão que mudará a sua vida para sempre, sem enrolação</p>
-            </header>
+        <main className="container">
+            <div className="main_img">
+                <img src={Image} alt="" />
+            </div>
+            <div className="main_description">
+                <h1>E-Book sobre </h1>
+                <div className="description">
+                    <p>{desc}</p>
+                </div>
+            </div>
         </main>
         </>
     )

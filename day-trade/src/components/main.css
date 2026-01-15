@@ -1,0 +1,121 @@
+.container{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_img{
+    padding: 0.5em;
+    width: 499px;
+}
+.main_img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem #16a314,
+                0 0 1rem #16a314;
+    transition: ease-in .3s;
+}
+.main_img img:hover{
+    box-shadow: 0 0 3.5rem #16a314,
+                0 0 3.5rem #16a314,
+                0 0 3.5rem #16a314,
+                0 0 3.5rem #16a314;
+}
+.main_description{
+    width: 300px;
+    height: auto;
+}
+.main_description h1{
+    color: white;
+    font-size: 3rem;
+}
+.main_description p{
+    color: white;
+    font-size: 1.2rem;
+}
+.main_description h1::after{
+    content: '';
+    position: relative;
+    border-right: 2px solid #0ed907;
+    color: #0ed907;
+    animation: content-animation infinite 4s,
+                cursor .55s infinite step-start;
+
+}
+@keyframes content-animation {
+    5%{
+        content: 'D';
+    }
+    10%{
+        content: 'Da';
+    }
+    15%{
+        content: 'Day';
+    }
+    20%{
+        content: 'Day-';
+    }
+    25%{
+        content: 'Day-T';
+    }
+    30%{
+        content: 'Day-Tr';
+    }
+    35%{
+        content: 'Day-Tra';
+    }
+    40%{
+        content: 'Day-Trad';
+    }
+    45%{
+        content: 'Day-Trade';
+    }
+    50%{
+        content: 'Day-Trad';
+    }
+    55%{
+        content: 'Day-Tra';
+    }
+    60%{
+        content: 'Day-Tr';
+    }
+    65%{
+        content: 'Day-T';
+    }
+    70%{
+        content: 'Day-';
+    }
+    75%{
+        content: 'Day';
+    }
+    80%{
+        content: 'Da';
+    }
+    85%{
+        content: 'D';
+    }
+}
+@keyframes cursor{
+    50%{
+        border-right: 2px solid transparent;
+    }
+}
+@media(max-width: 822px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main_description{
+        margin-bottom: 5rem;
+        width: min(499px, 90%);
+    }
+    .main_img{
+        width: min(499px, 90%);
+    }
+}
