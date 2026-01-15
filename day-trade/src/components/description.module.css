@@ -8,7 +8,10 @@
     cursor: none;
 }
 .description_text{
-    width: 435px;
+    height: auto;
+}
+.description_text p{
+    font-size: min(5vw, 1rem);
 }
 .cursor{
     position: absolute;
@@ -17,6 +20,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     mix-blend-mode: difference;
+    will-change: transform, width, height;
 }
 
 @media(max-width: 822px){
@@ -27,10 +31,10 @@
         align-items: center;
         cursor: none;
     }
-    .main_description img{
-        width: min(630px, 90%);
+     .description_text h3, .description_text p{
+        font-size: min(5vw, 1.2rem);
     }
-    .description_text{
-        width: min(435px, 90%);
+    .main_description img{
+        width: min(600px, 80%)
     }
 }
